@@ -15,6 +15,7 @@ LOCAL_MODULE    := patcher
 LOCAL_WHOLE_STATIC_LIBRARIES := dobby GlossHook
 LOCAL_SRC_FILES := src/main.cpp
 
+LOCAL_CPP_FEATURES += exceptions
 LOCAL_CFLAGS := -O2 -w -s -Wno-error=format-security -fvisibility=hidden -fpermissive -fexceptions
 LOCAL_CPPFLAGS := -O2 -w -s -Wno-error=format-security -fvisibility=hidden -Werror -std=c++17
 LOCAL_CPPFLAGS += -Wno-error=c++11-narrowing -fpermissive -Wall -fexceptions  
